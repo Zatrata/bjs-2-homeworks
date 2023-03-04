@@ -1,11 +1,11 @@
 //Задача №1
 class PrintEditionItem{
     constructor(name, releaseDate, pagesCount){
-    this.name = name; //название книги
-    this.releaseDate = releaseDate; //дата выпуска
-    this.pagesCount = pagesCount; //количество страниц
-    this.state = 100; //состояние
-    this.type = null; // жанр
+        this.name = name; //название книги
+        this.releaseDate = releaseDate; //дата выпуска
+        this.pagesCount = pagesCount; //количество страниц
+        this.state = 100; //состояние
+        this.type = null; // жанр
     }
     fix(){
         this.state *= 1.5;
@@ -35,7 +35,7 @@ class Magazine extends PrintEditionItem{
 
 class Book extends PrintEditionItem{
     constructor(author, name, releaseDate, pagesCount, type){
-        super(author, name, releaseDate, pagesCount, type);
+        super(name, releaseDate, pagesCount, type);
         this.author = author;
         this.type = "book";
     }
